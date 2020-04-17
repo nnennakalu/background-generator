@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gradient Background</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="gradient">
+	<h1>Background Generator</h1>
+	<input class="color1" type="color" name="color1" value="#00ff00" />
+	<input class="color2" type="color" name="color2" value="#ff0000" />
+	<div class="choose">
+		<p>Choose orientation</p>
+		<input type="radio" name="ori" value="to right top" id="radio1" checked="" />
+		<label class="rLab" for="radio1"><i class="fa fa-arrow-right degtop" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to right" id="radio2" />
+		<label class="rLab" for="radio2"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to right bottom" id="radio3" />
+		<label class="rLab" for="radio3"><i class="fa fa-arrow-right degbot" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to bottom" id="radio4" />
+		<label class="rLab" for="radio4"><i class="fa fa-arrow-down" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to left bottom" id="radio5" />
+		<label class="rLab" for="radio5"><i class="fa fa-arrow-left degtop" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to left" id="radio6" />
+		<label class="rLab" for="radio6"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to left top" id="radio7" />
+		<label class="rLab" for="radio7"><i class="fa fa-arrow-left degbot" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="to top" id="radio8" />
+		<label class="rLab" for="radio8"><i class="fa fa-arrow-up" aria-hidden="true"></i></label>
+
+		<input type="radio" name="ori" value="circle" id="radio9" />
+		<label class="rLab rotate" for="radio9"><i class="fa fa-undo" aria-hidden="true"></i></label>
+	</div>
+	<h2>Current CSS Background</h2>
+	<h3></h3>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
