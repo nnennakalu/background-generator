@@ -39,16 +39,16 @@ input[type="color"] {
 }
 
 label.rLab {
-  position: relative;
+	position: relative;
+	top: 10px;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px;
   cursor: pointer;
   border-radius: 100%;
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   line-height: 34px;
   z-index: 90;
   color: var(--main-bg-color);
@@ -57,9 +57,9 @@ label.rLab {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  -webkit-box-direction: normal;
-  text-align: center;
+  vertical-align: middle;
+	-webkit-box-direction: normal;
+
 }
 
 label.rLab {
@@ -86,11 +86,20 @@ input[type="radio"]:checked + label.rLab {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .degtop {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
+
+.degbot {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		    padding-top: 5px;
+    padding-left: 5px;
+}
+
