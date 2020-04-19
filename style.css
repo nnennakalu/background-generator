@@ -15,12 +15,13 @@ body {
 }
 
 h1 {
-  font: 900 4em "Playfair Display", serif;
+  font: 900 7rem "Playfair Display", serif;
   color: var(--main-bg-color);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   width: 100%;
+  padding-top: 10px;
 }
 
 h3 {
@@ -115,4 +116,26 @@ input[type="radio"]:checked + label.rLab {
 
 .position {
   margin-top: 2px;
+}
+
+.code-box {
+  width: 25%;
+  background-blend-mode: overlay;
+  border-left: 0px solid #696969;
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+  text-transform: none;
+}
+
+.code-box code {
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  border-left: 3px solid var(--main-bg-color);
+  background-color: rgba(189, 189, 189, 0.1);
+  padding: 15px 8px 15px 17px;
+  border-radius: 5px;
 }
