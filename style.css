@@ -24,12 +24,12 @@ body {
 }
 
 h1 {
-  font: 900 5rem "Playfair Display", serif;
+  font: 900 6vw "Playfair Display", serif;
   color: var(--main-bg-color);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  width: 100%;
+	width: 100%;
 }
 
 input[type="color"] {
