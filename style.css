@@ -4,32 +4,32 @@
   --main-bg-color: rgba(0, 0, 0, 0.5);
 }
 
+html {
+	height: auto;
+	min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 body {
   font: "Raleway", sans-serif;
   color: var(--main-bg-color);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  top: 15%;
-	background: linear-gradient(to right, red, yellow); /* Standard syntax */
+  background: linear-gradient(to right, red, yellow); /* Standard syntax */
 }
 
 h1 {
-  font: 900 6rem "Playfair Display", serif;
+  font: 900 5rem "Playfair Display", serif;
   color: var(--main-bg-color);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   width: 100%;
-  padding-top: 10px;
-}
-
-h3 {
-  font: 1em "Playfair Display", serif;
-  color: var(--main-bg-color);
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0.01em;
 }
 
 input[type="color"] {
