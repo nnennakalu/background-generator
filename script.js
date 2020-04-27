@@ -5,6 +5,12 @@ var body = document.getElementById("gradient");
 var orientation = document.querySelectorAll('input[type="radio"]');
 console.log(orientation);
 
+function currentSettings() {
+	var CSSprop = window.getComputedStyle(body, null).getPropertyValue("background-image");;
+	css.textContent = CSSprop;
+}
+
+currentSettings();
 
 function setGradient(e) {
 	currentTarget = e.target;
@@ -23,8 +29,7 @@ function setGradient(e) {
 			")";
 	}
 
-
-	css.textContent = body.style.background;
+	currentSettings();
 }
 
 color1.addEventListener("input", setGradient);

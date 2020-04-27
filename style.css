@@ -20,7 +20,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  background: linear-gradient(to right, red, yellow); /* Standard syntax */
+  background: linear-gradient(to top right, #dfbfff, #b3ffb3); /* Standard syntax */
 }
 
 h1 {
@@ -34,7 +34,8 @@ h1 {
 
 input[type="color"] {
   height: 50px;
-  border: none;
+	border: none;
+	border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
 }
