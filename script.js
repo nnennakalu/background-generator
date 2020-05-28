@@ -13,22 +13,14 @@ function currentSettings() {
 currentSettings();
 
 function getRandomValues() {
-	return '#' + (function co(lor) {
-		return (lor += [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'][Math.floor(Math.random() * 16)]) &&
-			(lor.length == 6) ? lor : co(lor);
+	return '#' + (function generate(hue) {
+		return (hue += [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'][Math.floor(Math.random() * 16)]) &&
+			(hue.length == 6) ? hue : generate(hue);
 	})('');
 }
 
 function cssStyle(currentTarget) {
-	body.style.background =
-		"linear-gradient(" +
-		currentTarget.value +
-		", " +
-		color1.value +
-		"," +
-		color2.value +
-		")";
-
+	body.style.background = `linear-gradient( ${currentTarget.value}, ${color1.value}, ${color2.value})`;
 }
 
 function setGradient(e) {
